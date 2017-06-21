@@ -18,9 +18,9 @@ if ( stristr( strtolower( $_SERVER['HTTP_USER_AGENT'] ), "mozilla" ) ) {
 
 <!--
 
-  Hi reader of this source!
+  Dear reader of this source,
 
-  This project exists to scratch a personal itch. I regularly need to know my internet ip (when behind a NAT firewall)
+  This project exists to scratch an itch. I regularly need to know my internet ip (when behind a NAT firewall)
   and I got fed up with the ad-ridden sites that provide that info. I have been using ifconfig.me for a while but it
   was slow(!) and not always up. I know there are a lot of these sites out there but I kept forgetting their urls and/or
   syntax. So here we are. Easy to use and remember, fast, free and open source.
@@ -32,14 +32,14 @@ if ( stristr( strtolower( $_SERVER['HTTP_USER_AGENT'] ), "mozilla" ) ) {
   https://github.com/johan-adriaans/ifconfig.network
 
   All this HTML markup is only sent when this page is requested using a browser. When you use
-  curl, wget, telnet or any other tool that does not have "mozilla" in their user agent will get
-  their ip-address and a unix newline.
+  curl, wget, telnet or any other tool that does not have "mozilla" in their user agent, you will only get
+  your internet ip-address and a unix newline.
 
   If you have any comments or improvements, send a pull request or open an issue on Github.
 
-  Enjoy!
 
-  -
+  May the source be with you,
+
   Johan Adriaans
 
 -->
