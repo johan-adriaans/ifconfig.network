@@ -28,7 +28,7 @@ if ( stristr( strtolower( $_SERVER['HTTP_USER_AGENT'] ), "mozilla" ) ) {
   You can view the php source here. It is just a symlink to the actual php file:
   https://ifconfig.network/index.phps
 
-  The source for this (tiny) project is available on github.
+  The complete source for this (tiny) project is available on github.
   https://github.com/johan-adriaans/ifconfig.network
 
   All this HTML markup is only sent when this page is requested using a browser. When you use
