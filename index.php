@@ -11,6 +11,7 @@ if ( stristr( strtolower( $_SERVER['HTTP_USER_AGENT'] ), "mozilla" ) ) {
   <meta name="author" content="Johan Adriaans, johan@driaans.nl">
   <meta name="language" content="en">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
   <link rel="help" href="https://github.com/johan-adriaans/ifconfig.network" />
   <link rel="license" href="https://github.com/johan-adriaans/ifconfig.network/blob/master/LICENSE.md" />
   </head>
@@ -44,7 +45,25 @@ if ( stristr( strtolower( $_SERVER['HTTP_USER_AGENT'] ), "mozilla" ) ) {
 
 -->
 
-  <pre><?php print $_SERVER['REMOTE_ADDR']; ?></pre>
+  <pre id="ip"><?php print $_SERVER['REMOTE_ADDR']; ?></pre>
+  <script>
+  function selectElementText(el, win) {
+    win = win || window;
+    var doc = win.document, sel, range;
+    if (win.getSelection && doc.createRange) {
+      sel = win.getSelection();
+      range = doc.createRange();
+      range.selectNodeContents(el);
+      sel.removeAllRanges();
+      sel.addRange(range);
+    } else if (doc.body.createTextRange) {
+      range = doc.body.createTextRange();
+      range.moveToElementText(el);
+      range.select();
+    }
+  }
+  selectElementText(document.getElementById("ip"));;
+  </script>
   </body>
 </html>
 
