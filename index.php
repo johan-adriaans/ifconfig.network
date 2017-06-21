@@ -11,7 +11,7 @@ if ( stristr( $_SERVER['HTTP_USER_AGENT'], "Mozilla" ) ) {
   <meta name="author" content="Johan Adriaans, johan@driaans.nl">
   <meta name="language" content="en">
   <link rel="help" href="https://github.com/johan-adriaans/ifconfig.network" />
-  <link rel="license" href="https://github.com/johan-adriaans/ifconfig.network" />
+  <link rel="license" href="https://github.com/johan-adriaans/ifconfig.network/blob/master/LICENSE.md" />
   </head>
   <body>
   <pre><?php print $_SERVER['REMOTE_ADDR']; ?></pre>
